@@ -1,0 +1,374 @@
+#btn {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+#btn li {
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#animationList {
+  overflow: hidden;
+}
+
+#animationList li {
+  width: 220px;
+  height: 220px;
+  padding: 10px;
+  float: left;
+  color: #fff;
+}
+
+#animationList li span {
+  display: block;
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+}
+
+
+
+A:link { text-decoration : none ;}
+
+body{
+	font-size: 13px;
+	line-height: 1.5;
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", arial, sans-serif;
+	letter-spacing: 2px;
+}
+
+header{
+  width: 910px;
+  height: 40px;
+  margin: auto;
+}
+
+
+#filters{
+  width: 420px;
+  text-align: center;
+  margin-left: 270px;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    clear: both;
+    margin-bottom: 20px; 
+    display: block;
+    font-weight: bold;
+      margin-left: 25px;
+  }
+
+
+
+#container{
+   width: 1100px;
+   margin: -20px;
+}
+
+/*.colorbox li{
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 20px;
+
+}*/
+
+#wrap {width:530px; margin:20px auto 0; height:300px;}
+
+form {background:#ffffff url('images/letter_bg.png'); 
+    top:200px;overflow:hidden;
+    height:200px;width:400px;margin:0px auto;padding:20px; 
+    border: 1px solid #fff;
+    border-radius: 3px; 
+    -moz-border-radius: 3px; -webkit-border-radius: 3px;
+/*    box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+    -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
+    -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;*/}
+
+
+    #form_wrap form {height:400px;}
+    label {
+      margin: 11px 20px 0 0; 
+      font-size: 14px; color: #b3aba1;
+      text-transform: uppercase; 
+
+    }
+
+    input[type=text], textarea {
+      font: 14px normal normal uppercase arial, sans-serif;;
+      color: #7c7873;background:none;
+      width: 380px; height: 36px; padding: 0px 10px; margin: 0 0 10px 0;
+      border:1px solid #f8f5f1;
+      -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+      -moz-box-shadow: inset 0px 0px 1px #726959;
+      -webkit-box-shadow:  inset 0px 0px 1px #b3a895; 
+      box-shadow:  inset 0px 0px 1px #b3a895;
+    } 
+
+    textarea { height: 80px; padding-top:14px;}
+
+    textarea:focus, input[type=text]:focus {background:rgba(255,255,255,.35);}
+
+    #form_wrap input[type=submit] {
+      position:relative;font-family: 'YanoneKaffeesatzRegular'; 
+      font-size:16px; color: #7c7873;
+      width:100%; text-align:center;opacity:1;
+      background:none;
+      cursor: pointer;
+      -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; 
+    }
+
+      #form_wrap input:hover[type=submit] {color:#435c70;}
+
+
+
+
+footer p{
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+/*colorのホバーここから*/
+
+.figure {
+  position: relative;
+  overflow: hidden;
+  width: 192px;
+  height: 195px;
+}
+#figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+}
+#figcaption h3,
+#figcaption p {
+  position: absolute;
+  left: -100%;
+  width: 260px;
+  -webkit-transition: .3s;
+  transition: .2s;
+  color: white;
+}
+#figcaption h3 {
+  top: 30px;
+  font-size: 20px;
+}
+#figcaption p {
+  top: 75px;
+}
+.figure:hover #figcaption {
+  opacity: 1;
+}
+.figure:hover #figcaption h3,
+.figure:hover #figcaption p {
+  left: 20px;
+}
+.figure:hover #figcaption h3 {
+  -webkit-transition-delay: .2s;
+  transition-delay: .1s;
+}
+.figure:hover #figcaption p {
+  -webkit-transition-delay: .5s;
+  transition-delay: .3s;
+}
+
+
+/*メニュー*/
+
+.HiddenCheckbox {
+  display: none;
+}
+.MenuContainer {
+  display: inline-block;
+  margin: 20px;
+}
+.MenuHeader {
+  color: #999999;
+  display: inline-block;
+  float: left;
+  font-weight: 100;
+  line-height: 30px;
+  margin: 0 0 0 15px;
+  opacity: 0;
+  position: relative;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  -webkit-transition: -webkit-transform 0.6s, opacity 0.5s;
+  transition: transform 0.6s, opacity 0.5s;
+  z-index: 2;
+}
+.MenuIcon {
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 30px;
+  position: relative;
+  width: 30px;
+  z-index: 2;
+}
+.MenuIcon::before {
+  -webkit-box-shadow: #999999 0 12px 0;
+  box-shadow: #999999 0 12px 0;
+  height: 6px;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  width: 30px;
+}
+.MenuIcon::after {
+  bottom: 0;
+  height: 6px;
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  transform-origin: left bottom;
+  width: 30px;
+}
+.MenuIcon::before,
+.MenuIcon::after {
+  background: #999999;
+  display: block;
+  content: '';
+  position: absolute;
+  -webkit-transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.4s 0.2s;
+  transition: box-shadow 0.2s linear, transform 0.4s 0.2s;
+}
+.Menu {
+
+  bottom: 0;
+  left: -90%;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+}
+.HiddenCheckbox:checked ~ .MenuHeader {
+  opacity: 1;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+.HiddenCheckbox:checked ~ .MenuIcon::before {
+  -webkit-box-shadow: transparent 0 0 0;
+  box-shadow: transparent 0 0 0;
+  -webkit-transform: rotate(45deg) translate3d(6px, -3px, 0);
+  transform: rotate(45deg) translate3d(6px, -3px, 0);
+}
+.HiddenCheckbox:checked ~ .MenuIcon::after {
+  -webkit-transform: rotate(-45deg) translate3d(6px, 3px, 0);
+  transform: rotate(-45deg) translate3d(6px, 3px, 0);
+}
+.HiddenCheckbox:checked ~ .Menu {
+  left: 0;
+}
+.Menu-list {
+  list-style-type: none;
+  margin: 60px 0 0;
+  padding: 0;
+}
+.Menu-item {
+  margin: 0;
+}
+.Menu-link {
+  color: #333;
+  display: block;
+  overflow: hidden;
+  padding: 8px 22px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  font-size: 13px;
+}
+.Menu-link::before {
+
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  -webkit-transition: right 0.4s;
+  transition: right 0.4s;
+  z-index: -1;
+}
+.Menu-link::after {
+  content: attr(href);
+  color: #fff;
+  float: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s, -webkit-transform 0.4s;
+  transition: opacity 0.8s, transform 0.4s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+/*colorのhover*/
+
+figure {
+  position: relative;
+  overflow: hidden;
+  width: 192px;
+  height: 195px;
+}
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+}
+figcaption h3,
+figcaption p {
+  position: absolute;
+  left: -100%;
+  width: 260px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+figcaption h3 {
+  top: 25px;
+  font-size: 40px;
+  font-family:serif, "明朝";
+}
+figcaption p {
+  top: 90px;
+  font-family:serif, "明朝";
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+figure:hover figcaption h3,
+figure:hover figcaption p {
+  left: 20px;
+}
+figure:hover figcaption h3 {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+figure:hover figcaption p {
+  -webkit-transition-delay: .5s;
+  transition-delay: .5s;
+}
+
+a{
+  color: #000000;
+  text-align: left;
+}
+
