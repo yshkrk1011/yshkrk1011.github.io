@@ -8,7 +8,7 @@ var manifest = [
 
 $(function(){
 ​
-  var stage = new createjs.Stage('canvasEl');
+var stage = new createjs.Stage('canvasEl');
 
   var loadQueue = new createjs.loadQueue();
   loadQueue.loadManifest(manifest); //読み込み開始
