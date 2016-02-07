@@ -1,6 +1,6 @@
 //先読みするリスト
 var manifest = [
-  {src:'img/tomato.png'},
+  {src:'./img/tomato.png'},
   {src:'img/pumpkin.png'},
   {src:'img/greenPepper.png'}
 ];
