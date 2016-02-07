@@ -32,6 +32,9 @@ $(function(){
       areaTemp = areaaTemp - 273.15;
       &('#areaTemp').text(areaaTemp + '度');
 
+      var areaHumidity = data.main.humidity;
+      $('#areaHumidity').text(areaHumidity + '%');
+
     }
 
   });
