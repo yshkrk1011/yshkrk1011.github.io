@@ -1,6 +1,6 @@
 //先読みするリスト
 var manifest = [
-  {src:'./img/tomato.png'},
+  {src:'img/tomato.png'},
   {src:'img/pumpkin.png'},
   {src:'img/greenPepper.png'}
 ];
@@ -15,7 +15,7 @@ var stage = new createjs.Stage('canvasEl');
     showVage();
   });
 
-  loadQueue.addEventListener('progress'function(evt){
+  loadQueue.addEventListener('progress',function(evt){
     console.log(evt.progress);
   });
 
