@@ -16,6 +16,26 @@ var stage = new createjs.Stage('canvasEl');
   });
 
   function showVage(){
+    var caSprite = new createjs.SpriteSheet(calciumSprite);
+    var calcium = new createjs.Sprite(caSprite,'stand');
+    stage.addChild(calcium);
+    vitaminC.x = 150;
+    vitaminC.y = 150;
+    vitaminC.alpha = 0;
+
+    createjs.Tween.get(calcium).to({alpha:1},500).wait(1000).call(calciumWalk).to({x:800},4000).call(calciumStand);
+
+
+    //ビタミンCが歩く
+    function calciumWalk(){
+      calcium.gotoAndPlay('walk');
+    }
+
+    //ビタミンCが止まる
+    function calciumStand(){
+      calcium.gotoAndPlay('stand');
+    }
+
     var vcSprite = new createjs.SpriteSheet(vitaminCSprite);
     var vitaminC = new createjs.Sprite(vcSprite,'stand');
     stage.addChild(vitaminC);
