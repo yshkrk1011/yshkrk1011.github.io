@@ -13,6 +13,7 @@ var stage = new createjs.Stage('canvasEl');
   loadQueue.addEventListener('complete',function(){
     console.log('読み込み完了！！！！');
     showVage();
+    showVage2();
   });
 
   function showVage(){
@@ -37,7 +38,7 @@ var stage = new createjs.Stage('canvasEl');
     }
 
     //calcium
-    function showVage(){
+    function showVage2(){
       var caSprite = new createjs.SpriteSheet(calciumSprite);
       var calcium = new createjs.Sprite(caSprite,'stand');
       stage.addChild(calcium);
