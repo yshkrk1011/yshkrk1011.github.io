@@ -12,6 +12,11 @@ var stage = new createjs.Stage('canvasEl');
 
   loadQueue.addEventListener('complete',function(){
     console.log('読み込み完了！！！！');
+    showVage();
+  });
+
+  loadQueue.addEventListener('progress'function(evt){
+    console.log(evt.progress);
   });
 
   function showVage(){
