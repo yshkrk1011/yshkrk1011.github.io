@@ -6,10 +6,8 @@ var manifest = [
 ];
 
 
-// DOMを読み込んだら
 $(function(){
 ​
-  // ステージ（canvas）の設定
   var stage = new createjs.Stage('canvasEl');
 
   //loadQueue ローディング
