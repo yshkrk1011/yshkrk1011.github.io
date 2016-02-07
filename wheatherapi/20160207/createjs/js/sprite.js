@@ -17,7 +17,7 @@ var stage = new createjs.Stage('canvasEl');
 
   function showVage(){
     var vcSprite = new createjs.SpriteSheet(vitaminCSprite);
-    var vitaminC = new createjs,Sprite(vcSprite,'stand');
+    var vitaminC = new createjs.Sprite(vcSprite,'stand');
     stage.addChild(vitaminC);
     vitaminC.x = 150;
     vitaminC.y = 150;
