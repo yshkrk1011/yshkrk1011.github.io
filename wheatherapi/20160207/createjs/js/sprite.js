@@ -39,8 +39,8 @@ var stage = new createjs.Stage('canvasEl');
     var vcSprite = new createjs.SpriteSheet(vitaminCSprite);
     var vitaminC = new createjs.Sprite(vcSprite,'stand');
     stage.addChild(vitaminC);
-    vitaminC.x = 150;
-    vitaminC.y = 150;
+    calcium.x = 300;
+    calcium.y = 300;
     vitaminC.alpha = 0;
 
     createjs.Tween.get(vitaminC).to({alpha:1},500).wait(1000).call(vitaminCWalk).to({x:500},4000).call(vitaminCStand);
