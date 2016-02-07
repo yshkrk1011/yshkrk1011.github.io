@@ -1,5 +1,5 @@
 var vitaminCSprite = {
-  images:'vitaminC.png',
+  images:['vitaminC.png'],
   frames:{width:160,height:160},
   animations:{
     stand:34,
