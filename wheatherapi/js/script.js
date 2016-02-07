@@ -6,7 +6,7 @@ $(function(){
 
     console.log(lat,lon);
     // 定数
-    const apikey = '4f718c8f7edd00afe53bbf5fc206a3d';
+    const apikey = '69dc26eb3cd4f3de98a0a440b5ce98f5';
 
     var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+ lat +'&lon=' + lon +'$appid=' + apikey;
 
@@ -27,6 +27,10 @@ $(function(){
       //地域名
       var areaName = data.name;
       $('#areaName').text(areaName);
+
+      var areaTemp = data.main.temp;
+      areaTemp = areaaTemp - 273.15;
+      &('#areaTemp').text(areaaTemp + '度');
 
     }
 
