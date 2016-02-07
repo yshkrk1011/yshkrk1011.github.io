@@ -15,15 +15,15 @@ var stage = new createjs.Stage('canvasEl');
     showVage();
   });
 
-  loadQueue.addEventListener('progress',function(evt){
-    console.log(evt.progress);
-  });
-
   function showVage(){
-    var tomato = new createjs.Bitmap(manifest[0].src);
-    tomato.x = 100;
-    tomato.y = 100;
-    stage.addChild(tomato);
+    var vcSprite = new createjs.SpriteSheet(vitaminCSprite);
+    var vitaminC = new createjs,Spritea(vcSprite,'stand');
+    stage.addChild(vitaminC);
+    vitaminC.x = 150;
+    vitaminC.y = 150;
+    vitaminC.alpha = 0;
+
+    createjs.Tween.get(vitaminC).to({alpha:1},500).wait(1000).to({x:500},4000);
     stage.update();
   };
 
