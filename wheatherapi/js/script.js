@@ -8,7 +8,7 @@ $(function(){
     // 定数
     const apikey = '69dc26eb3cd4f3de98a0a440b5ce98f5';
 
-    var url = 'http://api.openweathermap.org/data/2.5/weather?q=London';
+    var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+ lat +'&lon=' + lon +'$appid=' + apikey;
 
     $.ajax({
       url:url,
