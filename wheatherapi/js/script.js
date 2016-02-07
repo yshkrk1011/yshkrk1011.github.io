@@ -1,4 +1,4 @@
-$(function () {
+$(function(){
   //GPS
   navigator.geolocation.getCurrentPosition(function(pos){
     var lat = pos.coords.latitude;
@@ -8,7 +8,7 @@ $(function () {
     // 定数
     const apikey = '4f718c8f7edd00afe53bbf5fc206a3d';
 
-    var url = "http://api.openweathermap.org/data/2.5/weather?lat="+ lat +'&lon=' + lon +'$appid=' + apikey;
+    var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+ lat +'&lon=' + lon +'$appid=' + apikey;
 
     $.ajax({
       url:url,
@@ -19,6 +19,11 @@ $(function () {
     }).fail(function(){
       console.log('alax error!!!');
     });
+
+    //htmlに表示する関数
+    function showWeather(data){
+
+    }
 
   });
 });
