@@ -22,6 +22,11 @@ $(function(){
 
     //htmlに表示する関数
     function showWeather(data){
+      console.log(data);
+
+      //地域名
+      var areaName = data.name;
+      $('#areaName').text(areaName);
 
     }
 
