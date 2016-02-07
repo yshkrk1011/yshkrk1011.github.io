@@ -23,7 +23,7 @@ var stage = new createjs.Stage('canvasEl');
     vitaminC.y = 150;
     vitaminC.alpha = 0;
 
-    createjs.Tween.get(vitaminC).to({alpha:1},500).wait(1000).call().to({x:500},4000);
+    createjs.Tween.get(vitaminC).to({alpha:1},500).wait(1000).call(vitaminCWalk).to({x:500},4000).call(vitaminCStand);
 
 
     //ビタミンCが歩く
